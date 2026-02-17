@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TJFHWL75');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You! Your 15% Coupon is Ready | FlapJack</title>
+    <meta name="description" content="Your exclusive FlapJack 15% discount coupon is ready. Use code FLAPJACK15 on Amazon.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --red: #D42027;
+            --red-dark: #B01A20;
+            --cream: #FFF8F0;
+            --brown: #3D2B1F;
+            --brown-light: #6B5344;
+            --gold: #D4A853;
+            --gold-light: #E8C97A;
+            --green: #7CB342;
+            --white: #FFFFFF;
+            --black: #1A1A1A;
+            --gray: #6B7280;
+            --gray-light: #F3F4F6;
+            --shadow-lg: 0 12px 40px rgba(0,0,0,0.12);
+            --shadow-xl: 0 20px 60px rgba(0,0,0,0.15);
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --radius-xl: 32px;
+            --radius-full: 9999px;
+            --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition: 0.3s var(--ease);
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--brown);
+            background: var(--cream);
+            overflow-x: hidden;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; }
+
+        /* NAV */
+        .nav {
+            background: rgba(255,248,240,0.92);
+            backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);
+            border-bottom: 1px solid rgba(61,43,31,0.05);
+            box-shadow: 0 2px 24px rgba(0,0,0,0.06);
+        }
+        .nav-inner {
+            max-width: 1200px; margin: 0 auto; padding: 0 24px;
+            display: flex; align-items: center; justify-content: center; height: 70px;
+        }
+        .nav-logo { display: flex; align-items: center; gap: 10px; }
+        .nav-logo img { width: 36px; height: auto; }
+        .nav-wordmark {
+            font-family: 'Playfair Display', serif; font-size: 1.45rem; font-weight: 800;
+        }
+        .nav-wordmark span { color: var(--red); }
+
+        /* MAIN THANK YOU SECTION */
+        .thankyou {
+            flex: 1; display: flex; align-items: center; justify-content: center;
+            padding: 60px 24px;
+            background: linear-gradient(170deg, var(--cream) 0%, #FFF5E8 50%, var(--white) 100%);
+            position: relative; overflow: hidden;
+        }
+        .thankyou::before {
+            content: ''; position: absolute; top: -150px; right: -100px;
+            width: 400px; height: 400px; border-radius: 50%;
+            background: radial-gradient(circle, rgba(212,32,39,0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .thankyou::after {
+            content: ''; position: absolute; bottom: -100px; left: -80px;
+            width: 350px; height: 350px; border-radius: 50%;
+            background: radial-gradient(circle, rgba(212,168,83,0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .thankyou-card {
+            max-width: 580px; width: 100%; text-align: center;
+            position: relative; z-index: 2;
+            animation: fadeUp 0.6s ease-out;
+        }
+
+        .success-icon {
+            width: 80px; height: 80px; border-radius: 50%;
+            background: linear-gradient(135deg, var(--green), #66BB6A);
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 24px; font-size: 2.2rem;
+            box-shadow: 0 8px 32px rgba(124,179,66,0.3);
+        }
+
+        .thankyou-card h1 {
+            font-family: 'Playfair Display', serif; font-weight: 900;
+            font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.15;
+            color: var(--brown); margin-bottom: 12px;
+        }
+        .thankyou-card h1 .accent { color: var(--red); }
+
+        .thankyou-card .desc {
+            font-size: 1.05rem; color: var(--gray); line-height: 1.75;
+            margin-bottom: 32px; max-width: 480px; margin-left: auto; margin-right: auto;
+        }
+
+        /* COUPON BOX */
+        .coupon-card {
+            background: var(--white); border-radius: var(--radius-xl);
+            padding: 32px; box-shadow: var(--shadow-lg);
+            margin-bottom: 28px;
+        }
+        .coupon-label {
+            font-size: 0.82rem; color: var(--gray); text-transform: uppercase;
+            letter-spacing: 1px; font-weight: 600; margin-bottom: 8px;
+        }
+        .coupon-code-box {
+            background: var(--cream); border: 2px dashed var(--red);
+            border-radius: var(--radius-md); padding: 18px 24px;
+            margin-bottom: 16px; display: flex; align-items: center;
+            justify-content: center; gap: 14px; cursor: pointer;
+            transition: all var(--transition);
+        }
+        .coupon-code-box:hover {
+            background: rgba(212,32,39,0.04);
+            border-color: var(--red-dark);
+        }
+        .coupon-code {
+            font-size: 2rem; font-weight: 900; color: var(--red);
+            letter-spacing: 5px;
+        }
+        .copy-btn {
+            background: var(--gray-light); border: none; border-radius: 8px;
+            padding: 8px 14px; font-size: 0.78rem; font-weight: 600;
+            color: var(--brown-light); cursor: pointer; transition: all var(--transition);
+            font-family: 'Poppins', sans-serif;
+        }
+        .copy-btn:hover { background: var(--red); color: var(--white); }
+        .copy-btn.copied { background: var(--green); color: var(--white); }
+
+        .coupon-card .hint {
+            font-size: 0.82rem; color: var(--gray); margin-top: 4px;
+        }
+
+        /* AMAZON BUTTON */
+        .btn-amazon {
+            display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+            padding: 18px 44px; border-radius: var(--radius-full);
+            font-size: 1.1rem; font-weight: 700; cursor: pointer; border: none;
+            background: #FF9900; color: var(--black);
+            box-shadow: 0 6px 28px rgba(255,153,0,0.35);
+            transition: all var(--transition);
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+        }
+        .btn-amazon:hover {
+            background: #E88B00; transform: translateY(-3px);
+            box-shadow: 0 10px 36px rgba(255,153,0,0.45);
+        }
+        .arrow-icon {
+            width: 20px; height: 20px; transition: transform var(--transition);
+        }
+        .btn-amazon:hover .arrow-icon { transform: translateX(4px); }
+
+        .steps-hint {
+            margin-top: 24px; font-size: 0.85rem; color: var(--gray); line-height: 1.7;
+        }
+        .steps-hint strong { color: var(--brown); }
+
+        /* FOOTER */
+        .footer {
+            background: var(--brown); color: rgba(255,255,255,0.45); padding: 24px 0;
+        }
+        .footer-inner {
+            max-width: 1200px; margin: 0 auto; padding: 0 24px;
+            display: flex; justify-content: center; align-items: center;
+            gap: 16px; flex-wrap: wrap; text-align: center;
+        }
+        .footer-copy { font-size: 0.78rem; }
+
+        /* ANIMATIONS */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .thankyou { padding: 40px 20px; }
+            .coupon-card { padding: 24px 18px; }
+            .coupon-code { font-size: 1.5rem; letter-spacing: 3px; }
+            .btn-amazon { padding: 16px 32px; font-size: 1rem; width: 100%; }
+            .coupon-code-box { flex-direction: column; gap: 10px; }
+        }
+
+        @media (max-width: 480px) {
+            .thankyou { padding: 32px 16px; }
+            .coupon-card { padding: 20px 14px; }
+            .coupon-code { font-size: 1.3rem; letter-spacing: 2px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJFHWL75"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="images/heart-logo.png" alt="FlapJack">
+                <span class="nav-wordmark">flap<span>Jack</span></span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- THANK YOU -->
+    <section class="thankyou">
+        <div class="thankyou-card">
+            <div class="success-icon">&#10003;</div>
+            <h1>Thank You!<br>Your <span class="accent">15% OFF</span> Coupon<br>Is Ready</h1>
+            <p class="desc">Your exclusive discount code is below. Copy it, then head to Amazon to grab your favorite FlapJack oat bars at a special price!</p>
+
+            <div class="coupon-card">
+                <div class="coupon-label">Your Exclusive Coupon Code</div>
+                <div class="coupon-code-box" onclick="copyCoupon()" title="Click to copy">
+                    <span class="coupon-code" id="couponCode">FLAPJACK15</span>
+                    <button class="copy-btn" id="copyBtn">Copy</button>
+                </div>
+                <p class="hint">Click to copy &middot; Paste at Amazon checkout</p>
+            </div>
+
+            <a href="https://www.amazon.com/dp/B0FTCL2W41?th=1" target="_blank" rel="noopener" class="btn-amazon">
+                &#128722; Shop Now on Amazon
+                <svg class="arrow-icon" viewBox="0 0 18 18" fill="none"><path d="M7 4L12 9L7 14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+
+            <div class="steps-hint">
+                <strong>How to use:</strong> Copy the code above &rarr; Add FlapJack to your Amazon cart &rarr; Paste the code at checkout &rarr; Enjoy 15% OFF!
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-copy">&copy; 2024 FlapJack by S.P.I.N. Ltd. All rights reserved. Made with &#10084;&#65039; in Hungary.</p>
+        </div>
+    </footer>
+
+    <script>
+        function copyCoupon() {
+            const code = document.getElementById('couponCode').textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                const btn = document.getElementById('copyBtn');
+                btn.textContent = 'Copied!';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.textContent = 'Copy';
+                    btn.classList.remove('copied');
+                }, 2500);
+            }).catch(() => {
+                // Fallback for older browsers
+                const el = document.createElement('textarea');
+                el.value = code;
+                document.body.appendChild(el);
+                el.select();
+                document.execCommand('copy');
+                document.body.removeChild(el);
+                const btn = document.getElementById('copyBtn');
+                btn.textContent = 'Copied!';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.textContent = 'Copy';
+                    btn.classList.remove('copied');
+                }, 2500);
+            });
+        }
+
+        // Push dataLayer event for GTM conversion tracking
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'event': 'lead_form_submission',
+            'page': 'thank_you'
+        });
+    </script>
+</body>
+</html>

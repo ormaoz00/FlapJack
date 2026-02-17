@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TJFHWL75');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlapJack — Handmade Oat Bars | Premium English Oats | 13 Flavors</title>
@@ -166,7 +174,18 @@
             transition: color var(--transition); position: relative;
         }
         .nav-links a:hover { color: var(--red); }
-        .nav-cta { padding: 10px 24px !important; font-size: 0.84rem !important; }
+        .nav-cta {
+            padding: 12px 26px !important; font-size: 0.85rem !important;
+            background: var(--red) !important; color: var(--white) !important;
+            box-shadow: 0 4px 16px rgba(212,32,39,0.35) !important;
+            font-weight: 700 !important; letter-spacing: 0.3px;
+            border: 2px solid var(--red) !important;
+        }
+        .nav-cta:hover {
+            background: var(--white) !important; color: var(--red) !important;
+            border-color: var(--red) !important;
+            box-shadow: 0 6px 24px rgba(212,32,39,0.25) !important;
+        }
         .hamburger {
             display: none; background: none; border: none; cursor: pointer;
             width: 32px; height: 24px; position: relative;
@@ -582,16 +601,18 @@
         .cta-form-sub { font-size: 0.82rem; color: rgba(255,255,255,0.45); margin-bottom: 22px; }
         .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
         .form-group { margin-bottom: 0; }
-        .form-group input {
-            width: 100%; padding: 15px 18px; border-radius: var(--radius-md);
-            border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.05);
+        .form-group input, .form-email input {
+            width: 100%; padding: 16px 20px; border-radius: var(--radius-md);
+            border: 1.5px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1);
             color: var(--white); font-family: 'Poppins', sans-serif;
-            font-size: 0.92rem; transition: all var(--transition); outline: none;
+            font-size: 0.94rem; transition: all var(--transition); outline: none;
         }
-        .form-group input::placeholder { color: rgba(255,255,255,0.3); }
-        .form-group input:focus {
-            border-color: var(--red); background: rgba(255,255,255,0.08);
-            box-shadow: 0 0 0 3px rgba(212,32,39,0.2);
+        .form-group input::placeholder, .form-email input::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
+        .form-group input:focus, .form-email input:focus {
+            border-color: var(--gold); background: rgba(255,255,255,0.14);
+            box-shadow: 0 0 0 3px rgba(212,168,83,0.25);
         }
         .form-email { margin-bottom: 12px; }
         .form-email input { width: 100%; }
@@ -783,6 +804,10 @@
     </style>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJFHWL75"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- ANNOUNCEMENT BAR -->
     <div class="topbar">
@@ -1346,10 +1371,17 @@
             //   body: JSON.stringify({ name: fname, email, coupon: 'FLAPJACK15' }) });
 
             console.log('Lead:', { name: fname, email });
-            navigator.clipboard.writeText('FLAPJACK15').catch(() => {});
-            document.getElementById('modal').classList.add('show');
-            document.body.style.overflow = 'hidden';
-            document.getElementById('leadForm').reset();
+
+            // Push lead event to GTM dataLayer
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                'event': 'lead_form_submission',
+                'lead_name': fname,
+                'lead_email': email
+            });
+
+            // Redirect to Thank You page
+            window.location.href = 'thank-you.html';
             return false;
         }
 
