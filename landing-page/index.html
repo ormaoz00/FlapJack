@@ -368,6 +368,7 @@
         .flavor:hover {
             transform: translateY(-8px); box-shadow: var(--shadow-lg);
         }
+        .flavor[data-link] { cursor: pointer; }
 
         .flavor-img-wrap {
             width: 120px; height: 170px; margin: 0 auto 14px;
@@ -407,6 +408,14 @@
         .tag-pink { background: rgba(212,73,122,0.1); color: var(--pink); }
         .tag-orange { background: rgba(232,146,91,0.1); color: #C67740; }
         .tag-gold { background: rgba(212,168,83,0.1); color: #B8860B; }
+
+        .fl-buy {
+            display: inline-block; margin-top: 10px;
+            padding: 6px 16px; font-size: 0.75rem; font-weight: 700;
+            background: #FF9900; color: #fff; border-radius: var(--radius-full);
+            text-decoration: none; transition: background 0.2s, transform 0.2s;
+        }
+        .fl-buy:hover { background: #e68a00; transform: scale(1.05); }
 
         .flavors-lineup {
             margin-top: 40px; text-align: center;
@@ -954,52 +963,59 @@
             <!-- CLASSIC 100g -->
             <div class="flavor-category reveal"><h3>Classic Collection &middot; 100g</h3></div>
             <div class="flavors-grid">
-                <div class="flavor reveal" data-color="purple">
+                <div class="flavor reveal" data-color="purple" data-link="https://amzn.to/4aVQVTw">
                     <div class="flavor-img-wrap"><img src="images/choco-chip.png" alt="Chocolate Chip FlapJack"></div>
                     <h3>Chocolate Chip</h3>
                     <p class="fl-info">46% English Oats &middot; 450 kcal</p>
                     <span class="fl-tag tag-purple">Classic Favorite</span>
+                    <a href="https://amzn.to/4aVQVTw" target="_blank" rel="noopener" class="fl-buy">Buy on Amazon</a>
                 </div>
-                <div class="flavor reveal" data-color="teal">
+                <div class="flavor reveal" data-color="teal" data-link="https://amzn.to/3MvJv03">
                     <div class="flavor-img-wrap"><img src="images/banana-chocolate.png" alt="Banana Chocolate FlapJack"></div>
                     <h3>Banana Chocolate</h3>
                     <p class="fl-info">42% English Oats &middot; 458 kcal</p>
                     <span class="fl-tag tag-teal">Best Seller</span>
+                    <a href="https://amzn.to/3MvJv03" target="_blank" rel="noopener" class="fl-buy">Buy on Amazon</a>
                 </div>
-                <div class="flavor reveal" data-color="blue">
+                <div class="flavor reveal" data-color="blue" data-link="https://amzn.to/4qKMvUo">
                     <div class="flavor-img-wrap"><img src="images/yoghurt.png" alt="Yoghurt FlapJack"></div>
                     <h3>Yoghurt Coated</h3>
                     <p class="fl-info">45% English Oats &middot; 459 kcal</p>
                     <span class="fl-tag tag-blue">Creamy</span>
+                    <a href="https://amzn.to/4qKMvUo" target="_blank" rel="noopener" class="fl-buy">Buy on Amazon</a>
                 </div>
-                <div class="flavor reveal" data-color="red">
+                <div class="flavor reveal" data-color="red" data-link="https://amzn.to/4kKx8Kd">
                     <div class="flavor-img-wrap"><img src="images/strawberry.png" alt="Strawberry FlapJack"></div>
                     <h3>Strawberry</h3>
                     <p class="fl-info">Premium English Oats &middot; 100g</p>
                     <span class="fl-tag tag-red">Fruity</span>
+                    <a href="https://amzn.to/4kKx8Kd" target="_blank" rel="noopener" class="fl-buy">Buy on Amazon</a>
                 </div>
-                <div class="flavor reveal" data-color="orange">
+                <div class="flavor reveal" data-color="orange" data-link="https://amzn.to/4qKMvUo">
                     <div class="flavor-img-wrap"><img src="images/toffee.png" alt="Toffee FlapJack"></div>
                     <h3>Toffee</h3>
                     <p class="fl-info">45% English Oats &middot; 459 kcal</p>
                     <span class="fl-tag tag-orange">Caramel Coated</span>
+                    <a href="https://amzn.to/4qKMvUo" target="_blank" rel="noopener" class="fl-buy">Buy on Amazon</a>
                 </div>
             </div>
 
             <!-- PREMIUM 100g -->
             <div class="flavor-category reveal" style="margin-top:32px;"><h3>Premium Collection &middot; 100g</h3></div>
             <div class="flavors-grid">
-                <div class="flavor reveal" data-color="green">
+                <div class="flavor reveal" data-color="green" data-link="https://amzn.to/3Oh0Om6">
                     <div class="flavor-img-wrap"><img src="images/pistachio.png" alt="Pistachio FlapJack"></div>
                     <h3>Pistachio</h3>
                     <p class="fl-info">47% English Oats &middot; 453 kcal</p>
                     <span class="fl-tag tag-green">Highest Oats %</span>
+                    <a href="https://amzn.to/3Oh0Om6" target="_blank" rel="noopener" class="fl-buy">Buy on Amazon</a>
                 </div>
-                <div class="flavor reveal" data-color="blue">
+                <div class="flavor reveal" data-color="blue" data-link="https://amzn.to/40j753e">
                     <div class="flavor-img-wrap"><img src="images/almond-cherry.png" alt="Almond Cherry FlapJack"></div>
                     <h3>Almond Cherry</h3>
                     <p class="fl-info">Premium Blend &middot; 100g</p>
                     <span class="fl-tag tag-blue">New</span>
+                    <a href="https://amzn.to/40j753e" target="_blank" rel="noopener" class="fl-buy">Buy on Amazon</a>
                 </div>
                 <div class="flavor reveal" data-color="pink">
                     <div class="flavor-img-wrap"><img src="images/coco-cherry.png" alt="Coconut Cherry FlapJack"></div>
@@ -1030,11 +1046,12 @@
                     <p class="fl-info">43% Oats &middot; With Flaxseed</p>
                     <span class="fl-tag tag-orange">Superfood</span>
                 </div>
-                <div class="flavor reveal" data-color="gold">
+                <div class="flavor reveal" data-color="gold" data-link="https://amzn.to/4rsbPj6">
                     <div class="flavor-img-wrap"><img src="images/zero-blueberry.png" alt="FlapJack Zero Blueberry"></div>
                     <h3>Zero Blueberry</h3>
                     <p class="fl-info">0% Added Sugar</p>
                     <span class="fl-tag tag-gold">Zero Sugar</span>
+                    <a href="https://amzn.to/4rsbPj6" target="_blank" rel="noopener" class="fl-buy">Buy on Amazon</a>
                 </div>
             </div>
 
@@ -1394,6 +1411,14 @@
             if (e.target === document.getElementById('modal')) closeModal();
         });
         document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+        // Clickable flavor cards
+        document.querySelectorAll('.flavor[data-link]').forEach(card => {
+            card.addEventListener('click', e => {
+                if (e.target.closest('.fl-buy')) return;
+                window.open(card.dataset.link, '_blank', 'noopener');
+            });
+        });
 
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(a => {
