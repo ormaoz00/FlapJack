@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlapJack — Handmade Oat Bars | Premium English Oats | 13 Flavors</title>
-    <meta name="description" content="Fuel your day the natural way. Handmade oat bars crafted from premium English oats in Hungary since 2004. 13 unique flavors. Get 50% OFF your first order on Amazon.">
+    <meta name="description" content="Fuel your day the natural way. Handmade oat bars crafted from premium English oats in Hungary since 2004. 13 unique flavors. Available on Amazon.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -140,14 +140,6 @@
         /* ===========================================
            ANNOUNCEMENT BAR
         =========================================== */
-        .topbar {
-            background: var(--red); color: var(--white);
-            text-align: center; padding: 11px 24px;
-            font-size: 0.84rem; font-weight: 600;
-            letter-spacing: 0.3px;
-        }
-        .topbar a { text-decoration: underline; text-underline-offset: 2px; font-weight: 700; }
-
         /* ===========================================
            NAVIGATION
         =========================================== */
@@ -602,38 +594,6 @@
             font-size: 1.02rem; color: rgba(255,255,255,0.6);
             margin-bottom: 36px; line-height: 1.75;
         }
-        .cta-form {
-            background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
-            border-radius: var(--radius-xl); padding: 36px; backdrop-filter: blur(16px);
-        }
-        .cta-form-title { font-size: 1.25rem; font-weight: 700; color: var(--white); margin-bottom: 4px; }
-        .cta-form-sub { font-size: 0.82rem; color: rgba(255,255,255,0.45); margin-bottom: 22px; }
-        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
-        .form-group { margin-bottom: 0; }
-        .form-group input, .form-email input {
-            width: 100%; padding: 16px 20px; border-radius: var(--radius-md);
-            border: 1.5px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1);
-            color: var(--white); font-family: 'Poppins', sans-serif;
-            font-size: 0.94rem; transition: all var(--transition); outline: none;
-        }
-        .form-group input::placeholder, .form-email input::placeholder {
-            color: rgba(255,255,255,0.5);
-        }
-        .form-group input:focus, .form-email input:focus {
-            border-color: var(--gold); background: rgba(255,255,255,0.14);
-            box-shadow: 0 0 0 3px rgba(212,168,83,0.25);
-        }
-        .form-email { margin-bottom: 12px; }
-        .form-email input { width: 100%; }
-        .cta-form .btn-primary { width: 100%; padding: 17px; font-size: 1.02rem; }
-        .form-footer { margin-top: 14px; font-size: 0.76rem; color: rgba(255,255,255,0.35); }
-        .coupon-hint {
-            display: inline-flex; align-items: center; gap: 8px; margin-top: 18px;
-            background: rgba(212,168,83,0.12); border: 1px dashed var(--gold);
-            padding: 10px 20px; border-radius: var(--radius-md);
-            color: var(--gold-light); font-size: 0.88rem; font-weight: 600;
-        }
-
         /* ===========================================
            FAQ
         =========================================== */
@@ -702,44 +662,6 @@
         .footer-links a:hover { color: var(--white); }
 
         /* ===========================================
-           MODAL
-        =========================================== */
-        .modal-bg {
-            display: none; position: fixed; inset: 0;
-            background: rgba(0,0,0,0.55); z-index: 10000;
-            align-items: center; justify-content: center; padding: 24px;
-            backdrop-filter: blur(4px);
-        }
-        .modal-bg.show { display: flex; }
-        .modal-box {
-            background: var(--white); border-radius: var(--radius-xl);
-            padding: 44px; max-width: 460px; width: 100%; text-align: center;
-            animation: popIn 0.35s ease-out; position: relative;
-        }
-        .modal-x {
-            position: absolute; top: 14px; right: 14px;
-            width: 34px; height: 34px; border-radius: 50%;
-            background: var(--gray-light); border: none; cursor: pointer;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 1.15rem; color: var(--gray); transition: all var(--transition);
-        }
-        .modal-x:hover { background: var(--red); color: var(--white); }
-        .modal-emoji { font-size: 3rem; margin-bottom: 16px; }
-        .modal-box h2 {
-            font-family: 'Playfair Display', serif; font-size: 1.7rem;
-            font-weight: 800; margin-bottom: 10px;
-        }
-        .modal-box p { font-size: 0.92rem; color: var(--gray); margin-bottom: 20px; line-height: 1.7; }
-        .coupon-box {
-            background: var(--cream); border: 2px dashed var(--red);
-            border-radius: var(--radius-md); padding: 16px; margin-bottom: 22px;
-        }
-        .coupon-box .lbl { font-size: 0.76rem; color: var(--gray); margin-bottom: 4px; }
-        .coupon-box .code { font-size: 1.8rem; font-weight: 900; color: var(--red); letter-spacing: 4px; }
-        .modal-box .btn-amazon { width: 100%; padding: 16px; }
-        .modal-note { margin-top: 14px; font-size: 0.76rem; color: var(--gray); }
-
-        /* ===========================================
            ANIMATIONS
         =========================================== */
         @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
@@ -776,7 +698,6 @@
         }
 
         @media (max-width: 768px) {
-            .topbar { font-size: 0.76rem; padding: 9px 16px; }
             .nav-links { display: none; }
             .hamburger { display: block; }
             .nav-links.open {
@@ -791,11 +712,8 @@
             .benefits-grid { grid-template-columns: 1fr; }
             .flavors-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
             .flavor-img-wrap { width: 90px; height: 130px; }
-            .steps-grid { grid-template-columns: 1fr; max-width: 380px; margin: 0 auto; }
             .perfect-grid { grid-template-columns: repeat(2, 1fr); }
             .reviews-grid { grid-template-columns: 1fr; }
-            .form-row { grid-template-columns: 1fr; }
-            .cta-form { padding: 26px 18px; }
             .footer-inner { flex-direction: column; text-align: center; }
             .trust-row { gap: 20px; }
         }
@@ -807,7 +725,6 @@
             .flavors-grid { grid-template-columns: repeat(2, 1fr); }
             .flavor-img-wrap { width: 80px; height: 115px; }
             .perfect-grid { grid-template-columns: 1fr 1fr; }
-            .modal-box { padding: 28px 20px; }
             .trust-row { flex-direction: column; gap: 14px; }
         }
     </style>
@@ -817,11 +734,6 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJFHWL75"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
-    <!-- ANNOUNCEMENT BAR -->
-    <div class="topbar">
-        Limited Time Offer &mdash; <a href="#offer">Get 50% OFF</a> your first FlapJack order on Amazon!
-    </div>
 
     <!-- NAV -->
     <nav class="nav" id="nav">
@@ -835,7 +747,7 @@
                 <li><a href="#flavors">Flavors</a></li>
                 <li><a href="#nutrition">Nutrition</a></li>
                 <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#offer" class="btn btn-primary nav-cta">Get 50% OFF</a></li>
+                <li><a href="https://amzn.to/3MvJv03" target="_blank" rel="noopener" class="btn btn-amazon nav-cta">Shop on Amazon</a></li>
             </ul>
             <button class="hamburger" id="hamburger" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
@@ -863,9 +775,11 @@
                     <div class="hero-pill"><span class="ic">&#127942;</span> 13 Unique Flavors</div>
                 </div>
                 <div class="hero-actions">
-                    <a href="#offer" class="btn btn-primary">Claim 50% OFF Coupon</a>
-                    <a href="https://amzn.to/3MvJv03" target="_blank" rel="noopener" class="btn btn-amazon">
-                        Shop on Amazon
+                    <a href="https://amzn.to/3MvJv03" target="_blank" rel="noopener" class="btn btn-primary">
+                        &#128722; Shop on Amazon
+                    </a>
+                    <a href="#flavors" class="btn btn-amazon">
+                        Explore Flavors
                         <svg class="arrow-icon" viewBox="0 0 18 18" fill="none"><path d="M7 4L12 9L7 14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </a>
                 </div>
@@ -1063,33 +977,6 @@
         </div>
     </section>
 
-    <!-- HOW IT WORKS -->
-    <section class="how">
-        <div class="container">
-            <div class="sec-header reveal">
-                <div class="badge badge-light">&#127873; Exclusive Offer</div>
-                <h2 class="title title-lg">Get Your Discount<br>In 3 Easy Steps</h2>
-                <p class="subtitle">Claim your exclusive 50% OFF coupon and try FlapJack at a special introductory price.</p>
-            </div>
-            <div class="steps-grid">
-                <div class="step reveal">
-                    <div class="step-num">1</div>
-                    <h3>Enter Your Email</h3>
-                    <p>Drop your email below to unlock your personal 50% discount code. Takes 5 seconds.</p>
-                </div>
-                <div class="step reveal">
-                    <div class="step-num">2</div>
-                    <h3>Get Your Coupon</h3>
-                    <p>Receive your unique coupon code instantly. Copy it and head to our Amazon store.</p>
-                </div>
-                <div class="step reveal">
-                    <div class="step-num">3</div>
-                    <h3>Enjoy &amp; Save</h3>
-                    <p>Apply the coupon at Amazon checkout and enjoy premium handmade oat bars at a discount!</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- NUTRITION -->
     <section class="nutrition" id="nutrition">
@@ -1213,30 +1100,19 @@
         </div>
     </section>
 
-    <!-- LEAD CAPTURE CTA -->
+    <!-- SHOP CTA -->
     <section class="cta" id="offer">
         <div class="container">
             <div class="cta-inner">
-                <div class="badge badge-white">&#127873; Limited Time Offer</div>
+                <div class="badge badge-white">&#128722; Available on Amazon</div>
                 <h2 class="cta-title title title-lg">
-                    Get <span style="color:var(--red-light);">50% OFF</span> Your First<br>FlapJack Order
+                    Ready to Try<br>FlapJack?
                 </h2>
-                <p class="cta-sub">Enter your email to receive an exclusive Amazon discount coupon. Join our community and never miss a new flavor launch!</p>
-
-                <div class="cta-form">
-                    <div class="cta-form-title">Unlock Your Coupon</div>
-                    <div class="cta-form-sub">Your discount code will appear instantly</div>
-                    <form id="leadForm" onsubmit="return handleSubmit(event)">
-                        <div class="form-row">
-                            <div class="form-group"><input type="text" id="fname" placeholder="First name" required></div>
-                            <div class="form-group"><input type="text" id="lname" placeholder="Last name"></div>
-                        </div>
-                        <div class="form-email"><input type="email" id="email" placeholder="Your best email address" required></div>
-                        <button type="submit" class="btn btn-primary">&#127873; Get My 50% Coupon</button>
-                    </form>
-                    <div class="form-footer">&#128274; No spam, ever. Unsubscribe anytime. Your data is safe with us.</div>
-                    <div class="coupon-hint">&#127881; Your code: FLAPJACK50</div>
-                </div>
+                <p class="cta-sub">Premium handmade oat bars from Hungary — available now on Amazon. Pick your favorite flavor and taste the difference.</p>
+                <a href="https://amzn.to/3MvJv03" target="_blank" rel="noopener" class="btn btn-amazon" style="margin-top:28px;display:inline-flex;">
+                    &#128722; Shop on Amazon
+                    <svg class="arrow-icon" viewBox="0 0 18 18" fill="none"><path d="M7 4L12 9L7 14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
             </div>
         </div>
     </section>
@@ -1277,13 +1153,6 @@
                         <span class="faq-ic">+</span>
                     </button>
                     <div class="faq-a"><div class="faq-a-inner">Allergens vary by flavor. Some flavors contain milk, soy, and tree nuts. The Toffee flavor also contains wheat flour (gluten). All flavors may contain traces of pistachios and other nuts. Please always check the specific product label for your chosen variety's detailed allergen information.</div></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-q" onclick="toggleFaq(this)">
-                        <span>How do I use my 50% coupon on Amazon?</span>
-                        <span class="faq-ic">+</span>
-                    </button>
-                    <div class="faq-a"><div class="faq-a-inner">After entering your email, you'll receive your unique coupon code instantly. Simply copy the code, visit our Amazon listing, add your favorite FlapJack flavor to cart, and enter the coupon code at checkout. The 50% discount will be applied to your order automatically!</div></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-q" onclick="toggleFaq(this)">
@@ -1330,25 +1199,6 @@
         </div>
     </footer>
 
-    <!-- SUCCESS MODAL -->
-    <div class="modal-bg" id="modal">
-        <div class="modal-box">
-            <button class="modal-x" onclick="closeModal()">&times;</button>
-            <div class="modal-emoji">&#127881;</div>
-            <h2>You're In!</h2>
-            <p>Your exclusive 50% discount coupon is ready. Copy the code below and use it at checkout on Amazon.</p>
-            <div class="coupon-box">
-                <div class="lbl">Your Coupon Code</div>
-                <div class="code" id="couponCode">FLAPJACK50</div>
-            </div>
-            <a href="https://amzn.to/3MvJv03" target="_blank" rel="noopener" class="btn btn-amazon" onclick="closeModal()">
-                &#128722; Shop Now on Amazon
-                <svg class="arrow-icon" viewBox="0 0 18 18" fill="none"><path d="M7 4L12 9L7 14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-            <p class="modal-note">Code copied to clipboard! Paste it at Amazon checkout.</p>
-        </div>
-    </div>
-
     <!-- JS -->
     <script>
         // Mobile nav
@@ -1375,42 +1225,6 @@
             document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
             if (!wasOpen) item.classList.add('open');
         }
-
-        // Form
-        function handleSubmit(e) {
-            e.preventDefault();
-            const fname = document.getElementById('fname').value;
-            const email = document.getElementById('email').value;
-            if (!fname || !email) return false;
-
-            // TODO: Connect to your email service (Mailchimp, ConvertKit, etc.)
-            // fetch('YOUR_ENDPOINT', { method: 'POST', headers: {'Content-Type':'application/json'},
-            //   body: JSON.stringify({ name: fname, email, coupon: 'FLAPJACK50' }) });
-
-            console.log('Lead:', { name: fname, email });
-
-            // Push lead event to GTM dataLayer
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({
-                'event': 'lead_form_submission',
-                'lead_name': fname,
-                'lead_email': email
-            });
-
-            // Redirect to Thank You page
-            window.location.href = 'thank-you.html';
-            return false;
-        }
-
-        // Modal
-        function closeModal() {
-            document.getElementById('modal').classList.remove('show');
-            document.body.style.overflow = '';
-        }
-        document.getElementById('modal').addEventListener('click', e => {
-            if (e.target === document.getElementById('modal')) closeModal();
-        });
-        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
         // Clickable flavor cards
         document.querySelectorAll('.flavor[data-link]').forEach(card => {
