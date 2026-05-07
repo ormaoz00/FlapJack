@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TJFHWL75');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlapJack — Handmade Oat Bars | Premium English Oats | 13 Flavors</title>
+    <meta name="description" content="Fuel your day the natural way. Handmade oat bars crafted from premium English oats in Hungary since 2004. 13 unique flavors. Available on Amazon.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===========================================
+           ROOT & RESET
+        =========================================== */
+        :root {
+            --gold: #D4A853;
+            --gold-light: #E8C97A;
+            --gold-dark: #B8860B;
+            --gold-muted: rgba(212,168,83,0.12);
+            --dark: #0F0F0F;
+            --dark-2: #161616;
+            --dark-3: #1E1E1E;
+            --dark-4: #262626;
+            --dark-5: #303030;
+            --cream: #F5EDE3;
+            --cream-dim: rgba(245,237,227,0.7);
+            --white: #FFFFFF;
+            --text-primary: #F0E8DC;
+            --text-secondary: rgba(240,232,220,0.6);
+            --text-muted: rgba(240,232,220,0.35);
+            --red: #D42027;
+            --green: #7CB342;
+            --teal: #5BB5AD;
+            --blue: #5B8FBD;
+            --purple: #7C5BAD;
+            --pink: #D4497A;
+            --orange: #E8925B;
+            --border: rgba(212,168,83,0.12);
+            --border-bright: rgba(212,168,83,0.28);
+            --shadow-gold: 0 8px 32px rgba(212,168,83,0.18);
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+            --shadow-md: 0 8px 32px rgba(0,0,0,0.35);
+            --shadow-lg: 0 16px 56px rgba(0,0,0,0.45);
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 20px;
+            --radius-xl: 28px;
+            --radius-full: 9999px;
+            --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition: 0.3s var(--ease);
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-primary);
+            background: var(--dark);
+            overflow-x: hidden;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; }
+        button { font-family: inherit; }
+
+        /* ===========================================
+           UTILITIES
+        =========================================== */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .container-narrow { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+
+        .badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 7px 18px; border-radius: var(--radius-full);
+            font-size: 0.75rem; font-weight: 700; letter-spacing: 1px;
+            text-transform: uppercase; margin-bottom: 20px;
+        }
+        .badge-gold {
+            background: var(--gold-muted);
+            color: var(--gold-light);
+            border: 1px solid rgba(212,168,83,0.2);
+        }
+        .badge-dark { background: rgba(255,255,255,0.06); color: var(--gold-light); border: 1px solid var(--border); }
+
+        .title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 800; line-height: 1.1;
+        }
+        .title-xl { font-size: clamp(2.5rem, 6vw, 4.2rem); }
+        .title-lg { font-size: clamp(2rem, 5vw, 3.2rem); }
+        .title-md { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+
+        .subtitle {
+            font-size: clamp(0.95rem, 2.5vw, 1.08rem);
+            color: var(--text-secondary); line-height: 1.8; max-width: 600px;
+        }
+
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+            padding: 15px 34px; border-radius: var(--radius-full);
+            font-size: 0.95rem; font-weight: 700; cursor: pointer; border: none;
+            transition: all var(--transition); position: relative; overflow: hidden;
+            font-family: 'Inter', sans-serif; letter-spacing: 0.2px;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+            color: var(--dark);
+            box-shadow: 0 4px 24px rgba(212,168,83,0.35);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 36px rgba(212,168,83,0.5);
+            filter: brightness(1.08);
+        }
+        .btn-amazon {
+            background: #FF9900; color: #0F0F0F;
+            box-shadow: 0 4px 20px rgba(255,153,0,0.28);
+            font-weight: 800;
+        }
+        .btn-amazon:hover {
+            background: #FFB020; transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(255,153,0,0.42);
+        }
+        .btn-outline {
+            background: transparent; color: var(--text-primary);
+            border: 1.5px solid var(--border-bright);
+        }
+        .btn-outline:hover {
+            background: var(--gold-muted); border-color: var(--gold);
+            color: var(--gold-light); transform: translateY(-2px);
+        }
+
+        .arrow-icon {
+            width: 17px; height: 17px; transition: transform var(--transition);
+        }
+        .btn:hover .arrow-icon { transform: translateX(3px); }
+
+        /* ===========================================
+           NAVIGATION
+        =========================================== */
+        .nav {
+            position: sticky; top: 0; z-index: 1000;
+            background: rgba(15,15,15,0.88);
+            backdrop-filter: blur(28px); -webkit-backdrop-filter: blur(28px);
+            border-bottom: 1px solid var(--border);
+            transition: box-shadow var(--transition);
+        }
+        .nav.scrolled { box-shadow: 0 2px 32px rgba(0,0,0,0.5); border-bottom-color: var(--border-bright); }
+        .nav-inner {
+            display: flex; align-items: center; justify-content: space-between; height: 68px;
+        }
+        .nav-logo { display: flex; align-items: center; gap: 10px; }
+        .nav-logo img { width: 34px; height: auto; }
+        .nav-wordmark {
+            font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 800;
+            color: var(--text-primary);
+        }
+        .nav-wordmark span { color: var(--gold); }
+        .nav-links { display: flex; align-items: center; gap: 30px; list-style: none; }
+        .nav-links a {
+            font-size: 0.85rem; font-weight: 500; color: var(--text-secondary);
+            transition: color var(--transition);
+        }
+        .nav-links a:hover { color: var(--gold-light); }
+        .nav-cta {
+            padding: 10px 22px !important; font-size: 0.83rem !important;
+            background: linear-gradient(135deg, var(--gold), var(--gold-light)) !important;
+            color: var(--dark) !important; font-weight: 800 !important;
+            border: none !important; letter-spacing: 0.2px;
+        }
+        .nav-cta:hover {
+            filter: brightness(1.1) !important;
+            box-shadow: 0 4px 20px rgba(212,168,83,0.4) !important;
+        }
+        .hamburger {
+            display: none; background: none; border: none; cursor: pointer;
+            width: 32px; height: 24px; position: relative;
+        }
+        .hamburger span {
+            display: block; width: 100%; height: 1.5px; background: var(--text-primary);
+            position: absolute; left: 0; transition: all var(--transition); border-radius: 2px;
+        }
+        .hamburger span:nth-child(1) { top: 0; }
+        .hamburger span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+        .hamburger span:nth-child(3) { bottom: 0; }
+
+        /* ===========================================
+           HERO
+        =========================================== */
+        .hero {
+            padding: 80px 0 100px; position: relative; overflow: hidden;
+            background: var(--dark);
+        }
+        .hero-bg {
+            position: absolute; inset: 0; pointer-events: none;
+            background:
+                radial-gradient(ellipse 70% 60% at 85% 30%, rgba(212,168,83,0.07) 0%, transparent 60%),
+                radial-gradient(ellipse 50% 70% at 15% 70%, rgba(91,181,173,0.04) 0%, transparent 60%);
+        }
+        .hero-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 56px;
+            align-items: center; position: relative; z-index: 2;
+        }
+        .hero-content { max-width: 560px; }
+        .hero-eyebrow {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--gold-muted);
+            border: 1px solid rgba(212,168,83,0.2);
+            padding: 9px 18px; border-radius: var(--radius-full);
+            font-size: 0.78rem; font-weight: 700; color: var(--gold-light);
+            letter-spacing: 0.8px; text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+        .hero-title {
+            font-family: 'Playfair Display', serif; font-weight: 900;
+            font-size: clamp(2.6rem, 5.5vw, 3.9rem); line-height: 1.07;
+            color: var(--text-primary); margin-bottom: 20px;
+        }
+        .hero-title .accent {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-desc {
+            font-size: 1.05rem; color: var(--text-secondary); line-height: 1.82;
+            margin-bottom: 28px;
+        }
+        .hero-pills {
+            display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 32px;
+        }
+        .hero-pill {
+            display: flex; align-items: center; gap: 7px;
+            background: var(--dark-3); padding: 8px 15px; border-radius: var(--radius-full);
+            font-size: 0.8rem; font-weight: 500; border: 1px solid var(--border);
+            color: var(--text-secondary); white-space: nowrap;
+            transition: border-color var(--transition), color var(--transition);
+        }
+        .hero-pill:hover { border-color: var(--gold); color: var(--gold-light); }
+        .hero-pill .ic { font-size: 0.95rem; }
+        .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 32px; }
+        .hero-social-proof {
+            display: flex; align-items: center; gap: 14px;
+            padding-top: 22px; border-top: 1px solid var(--border);
+        }
+        .stars { color: var(--gold); font-size: 1.05rem; letter-spacing: 2px; }
+        .proof-text { font-size: 0.82rem; color: var(--text-secondary); }
+        .proof-text strong { color: var(--text-primary); }
+
+        .hero-visual { position: relative; display: flex; justify-content: center; }
+        .hero-img-wrap {
+            position: relative; width: 100%; max-width: 460px;
+        }
+        .hero-photo {
+            width: 100%; border-radius: var(--radius-xl);
+            box-shadow: 0 24px 80px rgba(0,0,0,0.6), 0 0 0 1px var(--border);
+        }
+        .hero-float {
+            position: absolute; background: var(--dark-3); border-radius: var(--radius-md);
+            padding: 13px 17px; box-shadow: var(--shadow-md); z-index: 3;
+            display: flex; align-items: center; gap: 10px;
+            font-size: 0.8rem; font-weight: 600; color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+        .hero-float.top-right {
+            top: -10px; right: -18px;
+            animation: float 3s ease-in-out infinite;
+        }
+        .hero-float.bottom-left {
+            bottom: 40px; left: -18px;
+            animation: float 3s ease-in-out 1.5s infinite;
+        }
+        .float-icon {
+            width: 36px; height: 36px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center; font-size: 1rem;
+        }
+        .float-icon.gi { background: rgba(124,179,66,0.12); }
+        .float-icon.hm { background: var(--gold-muted); }
+
+        /* ===========================================
+           TRUST BAR
+        =========================================== */
+        .trust-bar {
+            background: var(--dark-2); padding: 32px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+        .trust-row {
+            display: flex; justify-content: center; align-items: center;
+            gap: 48px; flex-wrap: wrap;
+        }
+        .trust-item {
+            display: flex; align-items: center; gap: 11px; font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
+        .trust-icon {
+            width: 40px; height: 40px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.1rem; flex-shrink: 0; border: 1px solid var(--border);
+        }
+        .trust-icon.r { background: rgba(212,32,39,0.08); }
+        .trust-icon.g { background: rgba(124,179,66,0.08); }
+        .trust-icon.o { background: var(--gold-muted); }
+        .trust-icon.b { background: rgba(91,143,189,0.08); }
+        .trust-item strong { color: var(--text-primary); }
+
+        /* ===========================================
+           BENEFITS
+        =========================================== */
+        .benefits { padding: 100px 0; background: var(--dark-2); }
+        .sec-header { text-align: center; margin-bottom: 56px; }
+        .sec-header .subtitle { margin: 0 auto; }
+
+        .benefits-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+        }
+        .benefit {
+            background: var(--dark-3); border-radius: var(--radius-lg);
+            padding: 30px 24px; transition: all var(--transition);
+            border: 1px solid var(--border); position: relative; overflow: hidden;
+        }
+        .benefit::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light));
+            transform: scaleX(0); transition: transform var(--transition); transform-origin: left;
+        }
+        .benefit:hover {
+            transform: translateY(-5px); box-shadow: var(--shadow-md);
+            border-color: var(--border-bright);
+        }
+        .benefit:hover::before { transform: scaleX(1); }
+        .benefit-ic {
+            width: 50px; height: 50px; border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.3rem; margin-bottom: 16px; border: 1px solid var(--border);
+        }
+        .benefit-ic.r { background: rgba(212,32,39,0.1); }
+        .benefit-ic.o { background: var(--gold-muted); }
+        .benefit-ic.g { background: rgba(124,179,66,0.1); }
+        .benefit-ic.p { background: rgba(124,91,173,0.1); }
+        .benefit-ic.t { background: rgba(91,181,173,0.1); }
+        .benefit-ic.b { background: rgba(91,143,189,0.1); }
+        .benefit h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; color: var(--text-primary); }
+        .benefit p { font-size: 0.86rem; color: var(--text-secondary); line-height: 1.7; }
+
+        /* ===========================================
+           FLAVORS
+        =========================================== */
+        .flavors {
+            padding: 100px 0 80px;
+            background: var(--dark);
+        }
+
+        .flavors-grid {
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px;
+            margin-bottom: 18px;
+        }
+
+        .flavor {
+            background: var(--dark-3); border-radius: var(--radius-lg);
+            padding: 22px 14px 18px; text-align: center;
+            transition: all var(--transition); border: 1px solid var(--border);
+            cursor: default; position: relative; overflow: hidden;
+        }
+        .flavor:hover {
+            transform: translateY(-7px); box-shadow: var(--shadow-lg);
+            border-color: var(--gold);
+        }
+        .flavor[data-link] { cursor: pointer; }
+
+        .flavor-img-wrap {
+            width: 110px; height: 160px; margin: 0 auto 13px;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .flavor-img-wrap img {
+            max-width: 100%; max-height: 100%; object-fit: contain;
+            filter: drop-shadow(0 6px 16px rgba(0,0,0,0.5));
+            transition: transform var(--transition);
+        }
+        .flavor:hover .flavor-img-wrap img { transform: scale(1.06) rotate(-2deg); }
+
+        .flavor h3 { font-size: 0.9rem; font-weight: 700; margin-bottom: 4px; color: var(--text-primary); }
+        .flavor .fl-info {
+            font-size: 0.72rem; color: var(--text-secondary); margin-bottom: 8px;
+        }
+        .flavor .fl-tag {
+            display: inline-block; padding: 3px 11px;
+            border-radius: var(--radius-full); font-size: 0.68rem; font-weight: 700;
+        }
+
+        .tag-purple { background: rgba(124,91,173,0.15); color: #B39DDB; border: 1px solid rgba(124,91,173,0.25); }
+        .tag-teal { background: rgba(91,181,173,0.15); color: #80CBC4; border: 1px solid rgba(91,181,173,0.25); }
+        .tag-green { background: rgba(124,179,66,0.15); color: #AED581; border: 1px solid rgba(124,179,66,0.25); }
+        .tag-blue { background: rgba(91,143,189,0.15); color: #90CAF9; border: 1px solid rgba(91,143,189,0.25); }
+        .tag-red { background: rgba(212,32,39,0.15); color: #EF9A9A; border: 1px solid rgba(212,32,39,0.25); }
+        .tag-pink { background: rgba(212,73,122,0.15); color: #F48FB1; border: 1px solid rgba(212,73,122,0.25); }
+        .tag-orange { background: rgba(232,146,91,0.15); color: #FFCC80; border: 1px solid rgba(232,146,91,0.25); }
+        .tag-gold { background: var(--gold-muted); color: var(--gold-light); border: 1px solid rgba(212,168,83,0.25); }
+
+        .fl-buy {
+            display: inline-block; margin-top: 10px;
+            padding: 6px 14px; font-size: 0.72rem; font-weight: 700;
+            background: #FF9900; color: #0F0F0F; border-radius: var(--radius-full);
+            text-decoration: none; transition: all 0.2s;
+        }
+        .fl-buy:hover { background: #FFB020; transform: scale(1.05); }
+
+        .flavors-lineup {
+            margin-top: 44px; text-align: center;
+        }
+        .flavors-lineup img {
+            max-width: 100%; border-radius: var(--radius-lg);
+            margin: 0 auto; border: 1px solid var(--border);
+        }
+        .flavors-lineup p {
+            margin-top: 14px; font-size: 0.88rem; color: var(--text-secondary);
+        }
+        .flavors-lineup strong { color: var(--text-primary); }
+
+        .flavor-category {
+            grid-column: 1 / -1;
+            text-align: center; padding: 8px 0 0;
+        }
+        .flavor-category h3 {
+            font-size: 0.78rem; font-weight: 700; color: var(--gold);
+            text-transform: uppercase; letter-spacing: 2px;
+            display: flex; align-items: center; justify-content: center; gap: 14px;
+        }
+        .flavor-category h3::before, .flavor-category h3::after {
+            content: ''; height: 1px; width: 48px;
+            background: linear-gradient(90deg, transparent, var(--border-bright));
+        }
+        .flavor-category h3::after {
+            background: linear-gradient(270deg, transparent, var(--border-bright));
+        }
+
+        /* ===========================================
+           HOW IT WORKS
+        =========================================== */
+        .how {
+            padding: 100px 0; background: var(--dark-2); color: var(--text-primary);
+            position: relative; overflow: hidden;
+        }
+        .how-bg {
+            position: absolute; inset: 0; pointer-events: none;
+            background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(212,168,83,0.05) 0%, transparent 70%);
+        }
+
+        .steps-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+            position: relative;
+        }
+        .step {
+            background: var(--dark-3); border: 1px solid var(--border);
+            border-radius: var(--radius-lg); padding: 36px 26px; text-align: center;
+            transition: all var(--transition);
+        }
+        .step:hover {
+            border-color: var(--gold); transform: translateY(-4px); box-shadow: var(--shadow-gold);
+        }
+        .step-num {
+            width: 46px; height: 46px; border-radius: 50%;
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: var(--dark);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.1rem; font-weight: 900; margin: 0 auto 18px;
+        }
+        .step h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 10px; color: var(--text-primary); }
+        .step p { font-size: 0.86rem; color: var(--text-secondary); line-height: 1.72; }
+
+        /* ===========================================
+           NUTRITION
+        =========================================== */
+        .nutrition { padding: 100px 0; background: var(--dark); }
+        .nut-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;
+        }
+        .nut-content .subtitle { margin-bottom: 28px; }
+        .nut-stats {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 28px;
+        }
+        .nut-stat {
+            background: var(--dark-3); border-radius: var(--radius-md); padding: 18px;
+            text-align: center; border: 1px solid var(--border);
+            transition: border-color var(--transition);
+        }
+        .nut-stat:hover { border-color: var(--gold); }
+        .nut-stat .val {
+            font-size: 1.6rem; font-weight: 800;
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; line-height: 1.2;
+        }
+        .nut-stat .lab { font-size: 0.74rem; color: var(--text-secondary); margin-top: 3px; }
+
+        .nut-list { list-style: none; }
+        .nut-list li {
+            display: flex; align-items: center; gap: 12px;
+            padding: 11px 0; border-bottom: 1px solid var(--border);
+            font-size: 0.9rem; color: var(--text-secondary);
+        }
+        .nut-list li:last-child { border-bottom: none; }
+        .ck {
+            width: 20px; height: 20px; border-radius: 50%;
+            background: rgba(124,179,66,0.12);
+            border: 1px solid rgba(124,179,66,0.25);
+            color: #AED581;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.65rem; flex-shrink: 0; font-weight: 700;
+        }
+
+        .nut-card {
+            background: var(--dark-3); border-radius: var(--radius-xl);
+            padding: 40px 30px; box-shadow: var(--shadow-md); text-align: center;
+            border: 1px solid var(--border);
+        }
+        .nut-card h3 {
+            font-family: 'Playfair Display', serif; font-size: 1.35rem;
+            font-weight: 800; margin-bottom: 6px; color: var(--text-primary);
+        }
+        .nut-card .sub { font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 24px; }
+        .macro { margin-bottom: 14px; text-align: left; }
+        .macro:last-child { margin-bottom: 0; }
+        .macro-hd { display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 600; margin-bottom: 6px; color: var(--text-secondary); }
+        .macro-track { height: 8px; background: var(--dark-5); border-radius: var(--radius-full); overflow: hidden; }
+        .macro-fill { height: 100%; border-radius: var(--radius-full); }
+        .fill-carbs { background: linear-gradient(90deg, var(--gold), var(--gold-light)); width: 54%; }
+        .fill-fat { background: linear-gradient(90deg, #E57373, #EF9A9A); width: 23%; }
+        .fill-fiber { background: linear-gradient(90deg, var(--teal), #80CBC4); width: 8%; }
+        .fill-protein { background: linear-gradient(90deg, #81C784, #A5D6A7); width: 6%; }
+
+        /* ===========================================
+           PERFECT FOR
+        =========================================== */
+        .perfect { padding: 100px 0; background: var(--dark-2); }
+        .perfect-grid {
+            display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px;
+        }
+        .perfect-card {
+            background: var(--dark-3); border-radius: var(--radius-lg);
+            padding: 26px 16px; text-align: center;
+            transition: all var(--transition); border: 1px solid var(--border);
+        }
+        .perfect-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-gold); border-color: var(--gold); }
+        .perfect-emoji { font-size: 2.2rem; margin-bottom: 12px; display: block; }
+        .perfect-card h4 { font-size: 0.86rem; font-weight: 700; margin-bottom: 4px; color: var(--text-primary); }
+        .perfect-card p { font-size: 0.76rem; color: var(--text-secondary); line-height: 1.5; }
+
+        /* ===========================================
+           TESTIMONIALS
+        =========================================== */
+        .reviews { padding: 100px 0; background: var(--dark); }
+        .reviews-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+        }
+        .review {
+            background: var(--dark-3); border-radius: var(--radius-lg);
+            padding: 30px; transition: all var(--transition); border: 1px solid var(--border);
+        }
+        .review:hover { transform: translateY(-4px); border-color: var(--border-bright); box-shadow: var(--shadow-md); }
+        .review-stars { color: var(--gold); margin-bottom: 14px; font-size: 0.9rem; letter-spacing: 2px; }
+        .review-text {
+            font-size: 0.9rem; line-height: 1.82; color: var(--text-secondary);
+            margin-bottom: 18px; font-style: italic;
+        }
+        .review-author { display: flex; align-items: center; gap: 11px; }
+        .review-avatar {
+            width: 40px; height: 40px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: 0.82rem; color: var(--dark);
+        }
+        .review-name { font-weight: 700; font-size: 0.86rem; color: var(--text-primary); }
+        .review-verified { font-size: 0.74rem; color: var(--text-secondary); }
+
+        /* ===========================================
+           SHOP CTA
+        =========================================== */
+        .cta {
+            padding: 100px 0;
+            background: var(--dark-2);
+            position: relative; overflow: hidden;
+        }
+        .cta-bg {
+            position: absolute; inset: 0; pointer-events: none;
+            background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(212,168,83,0.07) 0%, transparent 70%);
+        }
+        .cta-inner { max-width: 680px; margin: 0 auto; text-align: center; position: relative; z-index: 2; }
+        .cta-title { color: var(--text-primary); margin-bottom: 14px; }
+        .cta-title .accent {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .cta-sub {
+            font-size: 1rem; color: var(--text-secondary);
+            margin-bottom: 36px; line-height: 1.78;
+        }
+        .cta-divider {
+            width: 60px; height: 2px; margin: 0 auto 28px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+
+        /* ===========================================
+           FAQ
+        =========================================== */
+        .faq { padding: 100px 0; background: var(--dark); }
+        .faq-list { max-width: 720px; margin: 0 auto; }
+        .faq-item {
+            background: var(--dark-3); border-radius: var(--radius-md);
+            margin-bottom: 8px; border: 1px solid var(--border);
+            overflow: hidden; transition: all var(--transition);
+        }
+        .faq-item:hover { border-color: var(--border-bright); }
+        .faq-item.open { border-color: rgba(212,168,83,0.3); }
+        .faq-q {
+            width: 100%; display: flex; align-items: center; justify-content: space-between;
+            padding: 18px 20px; background: none; border: none; cursor: pointer;
+            font-family: 'Inter', sans-serif; font-size: 0.91rem; font-weight: 600;
+            color: var(--text-primary); text-align: left; transition: color var(--transition);
+        }
+        .faq-q:hover { color: var(--gold-light); }
+        .faq-ic {
+            width: 24px; height: 24px; border-radius: 50%; background: var(--dark-5);
+            border: 1px solid var(--border);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1rem; flex-shrink: 0; transition: all var(--transition);
+            color: var(--text-secondary);
+        }
+        .faq-item.open .faq-ic {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: var(--dark); border-color: transparent;
+            transform: rotate(45deg);
+        }
+        .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+        .faq-a-inner {
+            padding: 0 20px 18px; font-size: 0.86rem; color: var(--text-secondary); line-height: 1.82;
+        }
+        .faq-item.open .faq-a { max-height: 350px; }
+
+        /* ===========================================
+           FINAL CTA
+        =========================================== */
+        .final-bar {
+            padding: 56px 0;
+            background: linear-gradient(135deg, var(--gold-dark), var(--gold), var(--gold-light));
+            text-align: center;
+        }
+        .final-bar h2 {
+            font-family: 'Playfair Display', serif; font-weight: 800;
+            font-size: clamp(1.4rem, 4vw, 2.1rem); color: var(--dark);
+            margin-bottom: 20px;
+        }
+        .final-bar .btn-dark {
+            background: var(--dark); color: var(--gold-light);
+            padding: 16px 36px; border-radius: var(--radius-full);
+            font-size: 1rem; font-weight: 800; display: inline-flex;
+            align-items: center; gap: 10px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.3);
+            transition: all var(--transition); font-family: 'Inter', sans-serif;
+        }
+        .final-bar .btn-dark:hover {
+            background: var(--dark-2); transform: translateY(-2px);
+            box-shadow: 0 10px 32px rgba(0,0,0,0.4);
+        }
+
+        /* ===========================================
+           FOOTER
+        =========================================== */
+        .footer {
+            background: var(--dark-2); color: var(--text-muted); padding: 40px 0 24px;
+            border-top: 1px solid var(--border);
+        }
+        .footer-inner {
+            display: flex; justify-content: space-between; align-items: center;
+            flex-wrap: wrap; gap: 16px;
+        }
+        .footer-brand { display: flex; align-items: center; gap: 10px; }
+        .footer-brand img { width: 28px; }
+        .footer-brand-name {
+            font-family: 'Playfair Display', serif; font-size: 1.12rem;
+            font-weight: 800; color: var(--text-primary);
+        }
+        .footer-brand-name span { color: var(--gold); }
+        .footer-copy { font-size: 0.76rem; }
+        .footer-links { display: flex; gap: 20px; list-style: none; }
+        .footer-links a {
+            font-size: 0.78rem; color: var(--text-muted);
+            transition: color var(--transition);
+        }
+        .footer-links a:hover { color: var(--gold-light); }
+
+        /* ===========================================
+           ANIMATIONS
+        =========================================== */
+        @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(28px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .reveal {
+            opacity: 0; transform: translateY(24px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .reveal.vis { opacity: 1; transform: translateY(0); }
+
+        /* ===========================================
+           RESPONSIVE
+        =========================================== */
+        @media (max-width: 1024px) {
+            .hero-grid { grid-template-columns: 1fr; text-align: center; gap: 44px; }
+            .hero-content { max-width: 100%; }
+            .hero-pills, .hero-actions { justify-content: center; }
+            .hero-social-proof { justify-content: center; }
+            .hero-visual { order: -1; }
+            .hero-img-wrap { max-width: 340px; }
+            .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+            .flavors-grid { grid-template-columns: repeat(3, 1fr); }
+            .nut-grid { grid-template-columns: 1fr; gap: 40px; }
+            .perfect-grid { grid-template-columns: repeat(3, 1fr); }
+            .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hamburger { display: block; }
+            .nav-links.open {
+                display: flex; flex-direction: column;
+                position: absolute; top: 68px; left: 0; right: 0;
+                background: var(--dark-2); padding: 20px 24px; gap: 14px;
+                box-shadow: var(--shadow-lg); border-radius: 0 0 var(--radius-md) var(--radius-md);
+                border: 1px solid var(--border); border-top: none;
+            }
+            .hero { padding: 44px 0 60px; }
+            .hero-img-wrap { max-width: 260px; }
+            .hero-float { display: none; }
+            .benefits-grid { grid-template-columns: 1fr; }
+            .flavors-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+            .flavor-img-wrap { width: 90px; height: 128px; }
+            .perfect-grid { grid-template-columns: repeat(2, 1fr); }
+            .reviews-grid { grid-template-columns: 1fr; }
+            .footer-inner { flex-direction: column; text-align: center; }
+            .trust-row { gap: 20px; }
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 0 16px; }
+            .hero-actions { flex-direction: column; align-items: center; }
+            .hero-actions .btn { width: 100%; }
+            .flavors-grid { grid-template-columns: repeat(2, 1fr); }
+            .flavor-img-wrap { width: 78px; height: 112px; }
+            .perfect-grid { grid-template-columns: 1fr 1fr; }
+            .trust-row { flex-direction: column; gap: 12px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJFHWL75"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="#" class="nav-logo">
+                <img src="images/heart-logo.png" alt="FlapJack">
+                <span class="nav-wordmark">flap<span>Jack</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#flavors">Flavors</a></li>
+                <li><a href="#nutrition">Nutrition</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="https://amzn.to/3MvJv03" target="_blank" rel="noopener" class="btn btn-primary nav-cta">Shop on Amazon</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-eyebrow">&#10084;&#65039; Handmade in Hungary Since 2004</div>
+                <h1 class="hero-title">
+                    Fuel Your Day<br><span class="accent">The Natural Way</span>
+                </h1>
+                <p class="hero-desc">
+                    Premium oat bars handcrafted from the finest English oats.
+                    Real ingredients, slow-release energy, and a taste you won't forget.
+                    Not factory-made &mdash; crafted with love.
+                </p>
+                <div class="hero-pills">
+                    <div class="hero-pill"><span class="ic">&#127854;</span> 42-47% English Oats</div>
+                    <div class="hero-pill"><span class="ic">&#9889;</span> Slow-Release Energy</div>
+                    <div class="hero-pill"><span class="ic">&#127793;</span> Vegetarian Friendly</div>
+                    <div class="hero-pill"><span class="ic">&#127942;</span> 13 Unique Flavors</div>
+                </div>
+                <div class="hero-actions">
+                    <a href="https://amzn.to/3MvJv03" target="_blank" rel="noopener" class="btn btn-amazon">
+                        &#128722; Shop on Amazon
+                    </a>
+                    <a href="#flavors" class="btn btn-outline">
+                        Explore Flavors
+                        <svg class="arrow-icon" viewBox="0 0 18 18" fill="none"><path d="M7 4L12 9L7 14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+                <div class="hero-social-proof">
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <div class="proof-text"><strong>Premium European Quality</strong> &middot; Trusted since 2004</div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-img-wrap">
+                    <img src="images/hero-raspberry-top.jpg" alt="FlapJack Premium Oat Bar" class="hero-photo">
+                    <div class="hero-float top-right">
+                        <div class="float-icon gi">&#127807;</div>
+                        <div>
+                            <strong>Low GI</strong><br>
+                            <span style="font-size:0.7rem;color:var(--text-secondary);">No sugar crash</span>
+                        </div>
+                    </div>
+                    <div class="hero-float bottom-left">
+                        <div class="float-icon hm">&#128079;</div>
+                        <div>
+                            <strong>Handmade</strong><br>
+                            <span style="font-size:0.7rem;color:var(--text-secondary);">Not factory-made</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-row">
+                <div class="trust-item"><div class="trust-icon r">&#10084;&#65039;</div><div><strong>Handmade</strong> with care</div></div>
+                <div class="trust-item"><div class="trust-icon g">&#127854;</div><div><strong>Premium</strong> English Oats</div></div>
+                <div class="trust-item"><div class="trust-icon o">&#127466;&#127482;</div><div><strong>European</strong> Quality</div></div>
+                <div class="trust-item"><div class="trust-icon b">&#127752;</div><div><strong>13</strong> Unique Flavors</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="sec-header reveal">
+                <div class="badge badge-gold">&#9889; Why FlapJack?</div>
+                <h2 class="title title-lg">Not Just Another<br>Energy Bar</h2>
+                <p class="subtitle">Each bar is handcrafted in a small Hungarian facility using a traditional recipe and the finest English oats. No mass production. Just real food.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit reveal">
+                    <div class="benefit-ic r">&#128079;</div>
+                    <h3>Handmade With Care</h3>
+                    <p>Crafted by hand in a small facility in Hungary using a traditional recipe. This is not a mass-produced factory bar &mdash; you can taste the difference in every bite.</p>
+                </div>
+                <div class="benefit reveal">
+                    <div class="benefit-ic o">&#127854;</div>
+                    <h3>Premium English Oats</h3>
+                    <p>42-47% high-quality oat flakes sourced from England. Rich in dietary fiber, Vitamin B1 and naturally low glycemic index for sustained energy.</p>
+                </div>
+                <div class="benefit reveal">
+                    <div class="benefit-ic g">&#9889;</div>
+                    <h3>Slow-Release Energy</h3>
+                    <p>Low GI carbohydrates provide sustained energy for hours. No sugar spikes, no crash &mdash; just steady fuel for whatever your day brings.</p>
+                </div>
+                <div class="benefit reveal">
+                    <div class="benefit-ic p">&#127793;</div>
+                    <h3>Vegetarian & Real Ingredients</h3>
+                    <p>Made with recognizable ingredients: oat flakes, vegetable oils, demerara sugar, real fruit, nuts, and cocoa. Select flavors are palm oil-free.</p>
+                </div>
+                <div class="benefit reveal">
+                    <div class="benefit-ic t">&#128170;</div>
+                    <h3>Perfect Pre &amp; Post Workout</h3>
+                    <p>~450 kcal of balanced energy from complex and simple carbs. Rich in Vitamin B1 for healthy metabolism. BCAA option available.</p>
+                </div>
+                <div class="benefit reveal">
+                    <div class="benefit-ic b">&#127942;</div>
+                    <h3>European Quality Since 2004</h3>
+                    <p>Produced under strict EU food safety standards by S.P.I.N. Ltd., a trusted Central &amp; Eastern European producer and distributor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLAVORS -->
+    <section class="flavors" id="flavors">
+        <div class="container">
+            <div class="sec-header reveal">
+                <div class="badge badge-gold">&#127752; 13 Unique Flavors</div>
+                <h2 class="title title-lg">A Flavor For<br>Every Mood</h2>
+                <p class="subtitle">From classic Chocolate Chips to exotic Pistachio and Green Tea-Lavender with Vitamin D &mdash; discover your perfect match.</p>
+            </div>
+
+            <!-- CLASSIC 100g -->
+            <div class="flavor-category reveal"><h3>Classic Collection &middot; 100g</h3></div>
+            <div class="flavors-grid">
+                <div class="flavor reveal" data-color="purple" data-link="https://amzn.to/4aVQVTw">
+                    <div class="flavor-img-wrap"><img src="images/choco-chip.png" alt="Chocolate Chip FlapJack"></div>
+                    <h3>Chocolate Chip</h3>
+                    <p class="fl-info">46% English Oats &middot; 450 kcal</p>
+                    <span class="fl-tag tag-purple">Classic Favorite</span>
+                    <a href="https://amzn.to/4aVQVTw" target="_blank" rel="noopener" class="fl-buy">Buy on Amazon</a>
+                </div>
+                <div class="flavor reveal" data-color="teal" data-link="https://amzn.to/3MvJv03">
+                    <div class="flavor-img-wrap"><img src="images/banana-chocolate.png" alt="Banana Chocolate FlapJack"></div>
+                    <h3>Banana Chocolate</h3>
+                    <p class="fl-info">42% English Oats &middot; 458 kcal</p>
+                    <span class="fl-tag tag-teal">Best Seller</span>
+                    <a href="https://amzn.to/3MvJv03" target="_blank" rel="noopener" class="fl-buy">Buy on Amazon</a>
+                </div>
+                <div class="flavor reveal" data-color="blue" data-link="https://amzn.to/4qKMvUo">
+                    <div class="flavor-img-wrap"><img src="images/yoghurt.png" alt="Yoghurt FlapJack"></div>
+                    <h3>Yoghurt Coated</h3>
+                    <p class="fl-info">45% English Oats &middot; 459 kcal</p>
+                    <span class="fl-tag tag-blue">Creamy</span>
+                    <a href="https://amzn.to/4qKMvUo" target="_blank" rel="noopener" class="fl-buy">Buy on Amazon</a>
+                </div>
+                <div class="flavor reveal" data-color="red" data-link="https://amzn.to/4kKx8Kd">
+                    <div class="flavor-img-wrap"><img src="images/strawberry.png" alt="Strawberry FlapJack"></div>
+                    <h3>Strawberry</h3>
+                    <p class="fl-info">Premium English Oats &middot; 100g</p>
+                    <span class="fl-tag tag-red">Fruity</span>
+                    <a href="https://amzn.to/4kKx8Kd" target="_blank" rel="noopener" class="fl-buy">Buy on Amazon</a>
+                </div>
+                <div class="flavor reveal" data-color="orange" data-link="https://amzn.to/4qKMvUo">
+                    <div class="flavor-img-wrap"><img src="images/toffee.png" alt="Toffee FlapJack"></div>
+                    <h3>Toffee</h3>
+                    <p class="fl-info">45% English Oats &middot; 459 kcal</p>
+                    <span class="fl-tag tag-orange">Caramel Coated</span>
+                    <a href="https://amzn.to/4qKMvUo" target="_blank" rel="noopener" class="fl-buy">Buy on Amazon</a>
+                </div>
+            </div>
+
+            <!-- PREMIUM 100g -->
+            <div class="flavor-category reveal" style="margin-top:32px;"><h3>Premium Collection &middot; 100g</h3></div>
+            <div class="flavors-grid">
+                <div class="flavor reveal" data-color="green" data-link="https://amzn.to/3Oh0Om6">
+                    <div class="flavor-img-wrap"><img src="images/pistachio.png" alt="Pistachio FlapJack"></div>
+                    <h3>Pistachio</h3>
+                    <p class="fl-info">47% English Oats &middot; 453 kcal</p>
+                    <span class="fl-tag tag-green">Highest Oats %</span>
+                    <a href="https://amzn.to/3Oh0Om6" target="_blank" rel="noopener" class="fl-buy">Buy on Amazon</a>
+                </div>
+                <div class="flavor reveal" data-color="blue" data-link="https://amzn.to/40j753e">
+                    <div class="flavor-img-wrap"><img src="images/almond-cherry.png" alt="Almond Cherry FlapJack"></div>
+                    <h3>Almond Cherry</h3>
+                    <p class="fl-info">Premium Blend &middot; 100g</p>
+                    <span class="fl-tag tag-blue">New</span>
+                    <a href="https://amzn.to/40j753e" target="_blank" rel="noopener" class="fl-buy">Buy on Amazon</a>
+                </div>
+                <div class="flavor reveal" data-color="pink">
+                    <div class="flavor-img-wrap"><img src="images/coco-cherry.png" alt="Coconut Cherry FlapJack"></div>
+                    <h3>Coconut Cherry</h3>
+                    <p class="fl-info">Premium Blend &middot; 100g</p>
+                    <span class="fl-tag tag-pink">Tropical</span>
+                </div>
+            </div>
+
+            <!-- SPORTS & SPECIAL 60g -->
+            <div class="flavor-category reveal" style="margin-top:32px;"><h3>Sports &amp; Special Editions &middot; 60g</h3></div>
+            <div class="flavors-grid">
+                <div class="flavor reveal" data-color="red">
+                    <div class="flavor-img-wrap"><img src="images/bcaa-raspberry.png" alt="BCAA Raspberry FlapJack"></div>
+                    <h3>BCAA Raspberry</h3>
+                    <p class="fl-info">43% Oats &middot; 7.8g Protein</p>
+                    <span class="fl-tag tag-red">+ Amino Acids</span>
+                </div>
+                <div class="flavor reveal" data-color="purple">
+                    <div class="flavor-img-wrap"><img src="images/green-tea-lavender.png" alt="Green Tea Lavender FlapJack"></div>
+                    <h3>Green Tea &amp; Lavender</h3>
+                    <p class="fl-info">43% Oats &middot; Vitamins A, D, E</p>
+                    <span class="fl-tag tag-purple">+ Vitamin D</span>
+                </div>
+                <div class="flavor reveal" data-color="orange">
+                    <div class="flavor-img-wrap"><img src="images/orange-cocoa-flaxseed.png" alt="Orange Cocoa Flaxseed FlapJack"></div>
+                    <h3>Orange Cocoa Flax</h3>
+                    <p class="fl-info">43% Oats &middot; With Flaxseed</p>
+                    <span class="fl-tag tag-orange">Superfood</span>
+                </div>
+                <div class="flavor reveal" data-color="gold" data-link="https://amzn.to/4rsbPj6">
+                    <div class="flavor-img-wrap"><img src="images/zero-blueberry.png" alt="FlapJack Zero Blueberry"></div>
+                    <h3>Zero Blueberry</h3>
+                    <p class="fl-info">0% Added Sugar</p>
+                    <span class="fl-tag tag-gold">Zero Sugar</span>
+                    <a href="https://amzn.to/4rsbPj6" target="_blank" rel="noopener" class="fl-buy">Buy on Amazon</a>
+                </div>
+            </div>
+
+            <!-- FULL LINEUP -->
+            <div class="flavors-lineup reveal">
+                <img src="images/all-flavors-lineup.png" alt="All FlapJack Flavors">
+                <p><strong>13 unique flavors</strong> to explore &mdash; from classic to exotic, there's a FlapJack for every taste.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how" id="how">
+        <div class="how-bg"></div>
+        <div class="container">
+            <div class="sec-header reveal">
+                <div class="badge badge-gold">&#9881; How It Works</div>
+                <h2 class="title title-lg">Simple Steps to<br>Better Snacking</h2>
+                <p class="subtitle">From farm to bar to you — quality at every step of the journey.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step reveal">
+                    <div class="step-num">1</div>
+                    <h3>Select Your Flavors</h3>
+                    <p>Browse 13 unique flavors across Classic, Premium, and Sports editions. Find your perfect match or grab a variety.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-num">2</div>
+                    <h3>Order on Amazon</h3>
+                    <p>Available for fast delivery through Amazon. Fast shipping, easy returns, and the convenience of Prime delivery.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-num">3</div>
+                    <h3>Fuel Your Day</h3>
+                    <p>Enjoy handcrafted oat bars that give you slow-release energy without the crash. Real food, real results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUTRITION -->
+    <section class="nutrition" id="nutrition">
+        <div class="container">
+            <div class="nut-grid">
+                <div class="nut-content reveal">
+                    <div class="badge badge-gold">&#128171; Real Nutrition</div>
+                    <h2 class="title title-lg">Powered By<br>Nature's Best</h2>
+                    <p class="subtitle">Every FlapJack bar is packed with premium English oats, delivering a balanced mix of macro and micronutrients for sustained performance.</p>
+                    <div class="nut-stats">
+                        <div class="nut-stat"><div class="val">~450</div><div class="lab">kcal per 100g bar</div></div>
+                        <div class="nut-stat"><div class="val">42-47%</div><div class="lab">Premium Oats</div></div>
+                        <div class="nut-stat"><div class="val">Low GI</div><div class="lab">Glycemic Index</div></div>
+                        <div class="nut-stat"><div class="val">B1</div><div class="lab">Vitamin B1 Rich</div></div>
+                    </div>
+                    <ul class="nut-list">
+                        <li><span class="ck">&#10003;</span> High in dietary fiber &mdash; lasting satiety</li>
+                        <li><span class="ck">&#10003;</span> Slow-release energy without sugar spikes</li>
+                        <li><span class="ck">&#10003;</span> Contains Omega 3, 6 &amp; 9 fatty acids</li>
+                        <li><span class="ck">&#10003;</span> Rich in minerals: Iron, Magnesium, Zinc, Calcium</li>
+                        <li><span class="ck">&#10003;</span> Best quality protein among whole grains</li>
+                    </ul>
+                </div>
+                <div class="reveal">
+                    <div class="nut-card">
+                        <h3>Nutritional Breakdown</h3>
+                        <p class="sub">Average values per 100g bar</p>
+                        <div class="macro">
+                            <div class="macro-hd"><span>Carbohydrates</span><span>~54g</span></div>
+                            <div class="macro-track"><div class="macro-fill fill-carbs"></div></div>
+                        </div>
+                        <div class="macro">
+                            <div class="macro-hd"><span>Fat</span><span>~23g</span></div>
+                            <div class="macro-track"><div class="macro-fill fill-fat"></div></div>
+                        </div>
+                        <div class="macro">
+                            <div class="macro-hd"><span>Dietary Fiber</span><span>~6g</span></div>
+                            <div class="macro-track"><div class="macro-fill fill-fiber"></div></div>
+                        </div>
+                        <div class="macro">
+                            <div class="macro-hd"><span>Protein</span><span>~6g</span></div>
+                            <div class="macro-track"><div class="macro-fill fill-protein"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERFECT FOR -->
+    <section class="perfect">
+        <div class="container">
+            <div class="sec-header reveal">
+                <div class="badge badge-gold">&#127939; Perfect For</div>
+                <h2 class="title title-lg">Your Go-To Bar<br>For Every Occasion</h2>
+            </div>
+            <div class="perfect-grid">
+                <div class="perfect-card reveal">
+                    <span class="perfect-emoji">&#9749;</span>
+                    <h4>Quick Breakfast</h4>
+                    <p>Busy morning? Grab a bar and go.</p>
+                </div>
+                <div class="perfect-card reveal">
+                    <span class="perfect-emoji">&#128170;</span>
+                    <h4>Pre/Post Workout</h4>
+                    <p>Sustained fuel for peak performance.</p>
+                </div>
+                <div class="perfect-card reveal">
+                    <span class="perfect-emoji">&#127956;</span>
+                    <h4>Hiking &amp; Outdoors</h4>
+                    <p>Lightweight, portable energy companion.</p>
+                </div>
+                <div class="perfect-card reveal">
+                    <span class="perfect-emoji">&#128187;</span>
+                    <h4>Office Snack</h4>
+                    <p>Beat the afternoon slump naturally.</p>
+                </div>
+                <div class="perfect-card reveal">
+                    <span class="perfect-emoji">&#128218;</span>
+                    <h4>Kids &amp; School</h4>
+                    <p>Healthier alternative to sweets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="sec-header reveal">
+                <div class="badge badge-gold">&#11088; Customer Love</div>
+                <h2 class="title title-lg">What People Are<br>Saying</h2>
+                <p class="subtitle">Join our growing community of health-conscious snackers who made the switch to real, handmade energy bars.</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review reveal">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Finally an energy bar that doesn't taste like cardboard! The Pistachio flavor is absolutely incredible. You can tell it's handmade &mdash; the texture is perfect."</p>
+                    <div class="review-author">
+                        <div class="review-avatar" style="background:linear-gradient(135deg,var(--gold),var(--gold-light));">SJ</div>
+                        <div><div class="review-name">Sarah J.</div><div class="review-verified">Verified Purchase</div></div>
+                    </div>
+                </div>
+                <div class="review reveal">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"I take these on every hike now. The energy lasts for hours without any crash. Way better than the commercial bars I used to buy. Chocolate Chip is my go-to."</p>
+                    <div class="review-author">
+                        <div class="review-avatar" style="background:linear-gradient(135deg,#66BB6A,#A5D6A7);">MR</div>
+                        <div><div class="review-name">Mark R.</div><div class="review-verified">Verified Purchase</div></div>
+                    </div>
+                </div>
+                <div class="review reveal">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"My kids love these as an after-school snack. Real ingredients I can actually pronounce. The Banana Chocolate is a huge hit in our house!"</p>
+                    <div class="review-author">
+                        <div class="review-avatar" style="background:linear-gradient(135deg,#4DB6AC,#80CBC4);">EW</div>
+                        <div><div class="review-name">Emily W.</div><div class="review-verified">Verified Purchase</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOP CTA -->
+    <section class="cta" id="offer">
+        <div class="cta-bg"></div>
+        <div class="container">
+            <div class="cta-inner">
+                <div class="badge badge-gold">&#128722; Available on Amazon</div>
+                <h2 class="cta-title title title-lg">
+                    Ready to Try<br><span class="accent">FlapJack?</span>
+                </h2>
+                <div class="cta-divider"></div>
+                <p class="cta-sub">Premium handmade oat bars from Hungary — available now on Amazon. Pick your favorite flavor and taste the difference.</p>
+                <a href="https://amzn.to/3MvJv03" target="_blank" rel="noopener" class="btn btn-amazon" style="margin-top:8px;">
+                    &#128722; Shop on Amazon
+                    <svg class="arrow-icon" viewBox="0 0 18 18" fill="none"><path d="M7 4L12 9L7 14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="sec-header reveal">
+                <div class="badge badge-gold">&#10067; FAQ</div>
+                <h2 class="title title-lg">Got Questions?</h2>
+                <p class="subtitle">Everything you need to know about FlapJack oat bars.</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item open">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        <span>What makes FlapJack different from other energy bars?</span>
+                        <span class="faq-ic">+</span>
+                    </button>
+                    <div class="faq-a"><div class="faq-a-inner">Unlike mass-produced bars, each FlapJack is handmade in a small facility in Hungary using a traditional recipe. We use 42-47% premium English oat flakes &mdash; not cheap fillers. The result is a bar with real texture, rich flavor, and quality you can genuinely feel. Made by S.P.I.N. Ltd., a trusted European food producer since 2004.</div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        <span>Are FlapJack bars suitable for vegetarians?</span>
+                        <span class="faq-ic">+</span>
+                    </button>
+                    <div class="faq-a"><div class="faq-a-inner">Yes! FlapJack bars are suitable for vegetarians. They're made with recognizable, real ingredients including oat flakes, vegetable oils, demerara sugar, and natural flavor additions like real fruit, nuts, and cocoa. Select flavors are also palm oil-free. Always check the specific flavor's label for allergen information.</div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        <span>How many calories are in a FlapJack bar?</span>
+                        <span class="faq-ic">+</span>
+                    </button>
+                    <div class="faq-a"><div class="faq-a-inner">Each 100g FlapJack bar contains approximately 450-459 kcal of balanced energy from complex and simple carbohydrates. The 60g bars contain proportionally less. The Low GI formula means sustained fuel without sugar spikes or crashes &mdash; perfect as a meal replacement or energy boost.</div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        <span>What allergens should I be aware of?</span>
+                        <span class="faq-ic">+</span>
+                    </button>
+                    <div class="faq-a"><div class="faq-a-inner">Allergens vary by flavor. Some flavors contain milk, soy, and tree nuts. The Toffee flavor also contains wheat flour (gluten). All flavors may contain traces of pistachios and other nuts. Please always check the specific product label for your chosen variety's detailed allergen information.</div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        <span>Where are FlapJack bars manufactured?</span>
+                        <span class="faq-ic">+</span>
+                    </button>
+                    <div class="faq-a"><div class="faq-a-inner">FlapJack bars are handmade in Hungary under strict European food safety regulations. S.P.I.N. Ltd. has been producing and distributing premium food products across Central and Eastern Europe since 2004. The oats are sourced from England for the highest quality.</div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        <span>What sizes are available?</span>
+                        <span class="faq-ic">+</span>
+                    </button>
+                    <div class="faq-a"><div class="faq-a-inner">FlapJack bars are available in two sizes: 100g (our standard bar, perfect as a meal replacement or substantial snack) and 60g (a lighter option for the Sports &amp; Special Edition flavors). Both sizes are individually wrapped for freshness and portability.</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-bar">
+        <div class="container">
+            <h2>Ready to Try the Best Oat Bar You'll Ever Taste?</h2>
+            <a href="https://amzn.to/3MvJv03" target="_blank" rel="noopener" class="btn-dark">
+                &#128722; Shop FlapJack on Amazon
+                <svg class="arrow-icon" viewBox="0 0 18 18" fill="none"><path d="M7 4L12 9L7 14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="images/heart-logo.png" alt="FlapJack" style="width:28px;">
+                <span class="footer-brand-name">flap<span>Jack</span></span>
+            </div>
+            <p class="footer-copy">&copy; 2024 FlapJack by S.P.I.N. Ltd. All rights reserved. Made with &#10084;&#65039; in Hungary.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+        navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+        const obs = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); } });
+        }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+        window.addEventListener('scroll', () => {
+            document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 80);
+        });
+
+        function toggleFaq(btn) {
+            const item = btn.parentElement;
+            const wasOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+            if (!wasOpen) item.classList.add('open');
+        }
+
+        document.querySelectorAll('.flavor[data-link]').forEach(card => {
+            card.addEventListener('click', e => {
+                if (e.target.closest('.fl-buy')) return;
+                window.open(card.dataset.link, '_blank', 'noopener');
+            });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function(e) {
+                const t = document.querySelector(this.getAttribute('href'));
+                if (t) {
+                    e.preventDefault();
+                    const off = document.getElementById('nav').offsetHeight + 20;
+                    window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - off, behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
